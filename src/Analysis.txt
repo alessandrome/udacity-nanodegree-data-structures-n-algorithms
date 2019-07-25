@@ -1,0 +1,33 @@
+The following analysis will not count complexity of built-in functionalities like python implementation to check if element is in a list and default list sorting method
+
+Task0:
+  - first_text [complexity = O(1)]:
+    The function simply return the first element of texts list
+
+  - last_call [complexity = O(1)]:
+    The function simply return the last element of calls list
+
+
+Task1:
+  - count_telephone_numbers [complexity = O(n)]:
+    The function check every call and message numbers(receiver + sender) and add them to a list if the number it not present in it yet
+
+
+Task2:
+  - longest_call [complexity = O(n)]
+    The function create a dictionary with tel. number as key and seconds of time spent on call by them. Then search in this dictionary the number with more time spent
+
+
+Task3:
+  - (A) codes_called_by_bangalore [complexity = O(n)]:
+    The function iterate over the calls list and if the caller number start with Bangalore prefix, add the receiver code number in a list (it this is not in it yet)
+
+  - (B) perc_bangalore_to_bangalore [complexity = O(n)]:
+    The function iterate over the calls to count the calls made by Bangalore fixed line and in the same iteration check if that call is made to another fixed line of Bangalore.
+    At the end it calculate the percentage with the ratio between Bangalore fixed line called from the same country and total fixed line calls from Bangalore (multiplied by 100)
+
+
+Task4:
+  - potential_telemarketers [complexity = O(n)]
+    The function first create a list of all caller numbers. Then iterate over calls list to remove numbers present as receiver. At the end remove numbers that send or receive msgs.
+    Remaining numbers are potential telemarketers (only outcoming calls)
